@@ -129,7 +129,11 @@ DESCRIPTION
        %z     is replaced by the offset from the Prime Meridian in the format
               +HHMM or -HHMM as appropriate, with positive values representing
               locations east of Greenwich, or by the empty string if this is
-              not determinable.
+              not determinable.  The numeric time zone -0000 is used when the
+              time is Universal Time but local time is indeterminate; by
+              convention this is used for locations while uninhabited, and
+              corresponds to a zero offset when the time zone abbreviation
+              begins with "-".
 
        %%     is replaced by a single %.
 
